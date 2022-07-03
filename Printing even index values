@@ -1,0 +1,30 @@
+evenList = []
+listNumber = int(input("Enter elements = "))
+for i in range(1, listNumber + 1):
+    listValue = int(input())
+    evenList.append(listValue)
+print("List Items = ", evenList)
+i = 0
+while (i < len(evenList)):
+    if (evenList[i] % 2 == 0):
+        evenList.remove(evenList[i])
+    i = i + 1
+print(evenList)
+
+Output:
+Enter elements = 
+7
+5
+54
+24
+66
+32
+47
+99
+List Items =  [5, 54, 24, 66, 32, 47, 99]
+[5, 24, 32, 47, 99]
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+Online Python Compiler
